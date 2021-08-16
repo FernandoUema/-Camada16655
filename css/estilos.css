@@ -235,11 +235,10 @@ body::-webkit-scrollbar-thumb {
  
 #header .header__logo {
     font-family: 'Playfair Display', serif;
-    color:#2d2e2f;
+    color:#0d1b2b;
     text-decoration: none;
     font-weight: 700;
     font-size: 1.8rem;
-    margin-left: 20px;
     padding-top: 8px;/*era 23*/
     display:flex;
     justify-content: left;
@@ -253,7 +252,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .header__logo:hover {
-    color:#2d2e2f;
+    color:#0d1b2b;
 }
 /*menu full*//*el margin   margin-top: 9px; lo ubica*/
 #header .menu_nav_ancho { 
@@ -286,7 +285,7 @@ body::-webkit-scrollbar-thumb {
 
 #header nav ul li {
     font-family: 'Nunito', sans-serif;
-    color:#2d2e2f;
+    color:#0d1b2b;
     text-transform: none;
     list-style-type: none;
     letter-spacing: 1px;
@@ -303,7 +302,7 @@ body::-webkit-scrollbar-thumb {
 #header .header__navigation ul li a{
     text-decoration: none;
     justify-content: flex-end;
-    color:#2d2e2f;
+    color:#0d1b2b;
 }
 
 #header .header__navigation li:hover > ul {
@@ -325,9 +324,6 @@ body::-webkit-scrollbar-thumb {
   font-weight: 650;
   width: auto;
 }
-
-
-
 
 #header .header__navigation ul li a.active { 
     color: #c4373c;
@@ -440,7 +436,7 @@ body::-webkit-scrollbar-thumb {
 # CIERRA FOOTER 1 NAVIGATION
 --------------------------------------------------------------*/
 /* --------------------------------------------------------------
-# ABRE FOOTER 2 COPYRIGHT    background-color: ;
+# ABRE FOOTER 2 COPYRIGHT 
 
 -------------------------------------------------------------------------------------------------------------------footer 2*/
 /* zócalo color 100% */
@@ -480,21 +476,21 @@ body::-webkit-scrollbar-thumb {
 .footer__2__copyright--text{
     color:#2d2e2f;
     font-family: 'Jost', sans-serif;
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     font-weight: 400;
     padding-left:25px;
 }
 .footer__2__copyright--text2{
     color:#2d2e2f;
     font-family: 'Jost', sans-serif;
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     font-weight: 400;
     margin-top: 6px;
 }
 .footer__2__copyright--firma{
     color:#2d2e2f;
     font-family: 'Playfair Display', serif;
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     font-weight: 400;
     margin-top: 6px;
     padding-right:0px;
@@ -553,7 +549,6 @@ body::-webkit-scrollbar-thumb {
     text-align: center;
     font-kerning: auto;
     color:#f6f5f3;
-    
 }
 
 .hero__scroll .chevron {
@@ -635,7 +630,7 @@ body::-webkit-scrollbar-thumb {
 .dash {
     width: 30px;
     height: 4px;
-    background: #2d2e2f;
+    color:#0d1b2b;
 }
 
 #alberti .cezanne {
@@ -644,8 +639,7 @@ body::-webkit-scrollbar-thumb {
     border-radius: 50%;
     position: absolute; 
     background-color: #ac8fac;
-    z-index: 1;
-    
+    z-index: 1;   
 }
 
 #alberti .caja__alberti {
@@ -654,7 +648,7 @@ body::-webkit-scrollbar-thumb {
 
 #alberti .caja__letra--capital-alberti{
     position: absolute;
-    margin: 4.7rem 0rem 0rem 3.3rem;
+    margin: 4rem 0rem 0rem 3.3rem;
     z-index: 2;
 }
 
@@ -678,7 +672,7 @@ body::-webkit-scrollbar-thumb {
     font-weight: 500;
     font-style: italic;
     font-kerning: none;
-    line-height: 1.5rem;
+    line-height: 1.4rem;
     z-index: 3;
 }
 
@@ -713,9 +707,10 @@ body::-webkit-scrollbar-thumb {
     text-align:left;
     letter-spacing: 20px;
     flex-wrap: row;
+    color: #052c48;
 }
 
-#acerca .tipo__acerca--left{
+#acerca .tipo__acerca--left-txt{
     font-family: 'Jost', sans-serif;
     font-size: 1rem;
     font-weight: 400;
