@@ -1,5 +1,5 @@
 
-/*SLIDER DISPOSITIVOS x 6*/
+/*SLIDER  x 3*/
 
 @font-face {
   font-family: 'flexslider-icon';
@@ -18,7 +18,7 @@
 }
 
 .flexslider{
-	width: 100%;
+	width: 90%;/*ancho total del slider*/
 	position: relative;
 }
 
@@ -51,28 +51,29 @@
 	margin: 0 6px; /*espacio entre bullets*/
 }
 
+
 .flex-control-nav li a{
 	display: block;
-	background: #747172;
-	width: 12px; /*tamaño bullets*/
+    background-color:none;
+	width: 12px;
 	height: 12px;
 	border-radius: 12px;
 	text-indent: -9999px;
 }
 
+
 .flex-control-nav li a:hover{
-	background:  #007bff;
-}
+	background:#9d2021;
+  }
 
 .flex-control-nav li a.flex-active{
-	background: #ff7a36;	
+	background:#c4373c;
 }
-
 .flex-direction-nav a{ /*flechas prev next*/
 	display: block;
 	text-decoration: none;
 	position: absolute;
-	top: 44%;
+	top: 54%;
 	z-index: 999;
     width: 30px;
 	height: 30px;

@@ -14,8 +14,8 @@
  * ====================================================================================================================*/
 @font-face {
   font-family: 'flexslider-icon';
-  src: url('fonts/flexslider-icon.eot');
-  src: url('fonts/flexslider-icon.eot?#iefix') format('embedded-opentype'), url('fonts/flexslider-icon.woff') format('woff'), url('fonts/flexslider-icon.ttf') format('truetype'), url('fonts/flexslider-icon.svg#flexslider-icon') format('svg');
+  src: url('../fonts/flexslider-icon.eot');
+  src: url('../fonts/flexslider-icon.eot?#iefix') format('embedded-opentype'), url('../fonts/flexslider-icon.woff') format('woff'), url('../fonts/flexslider-icon.ttf') format('truetype'), url('../fonts/flexslider-icon.svg#flexslider-icon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -46,7 +46,7 @@
 }
 .flexslider .slides > li {
   display: none;
-  -webkit-backface-visibility: hidden;
+-webkit-backface-visibility: hidden;
 }
 .flexslider .slides img {
   width: 100%;
@@ -74,8 +74,8 @@ html[xmlns] .flexslider .slides {
  * ====================================================================================================================*/
 .flexslider {
   margin: 0 0 60px;
-  background: #fff;
-  border: 4px solid #fff;
+  background: #b09ab0;
+  border: 4px solid #b09ab0;
   position: relative;
   zoom: 1;
   -webkit-border-radius: 4px;
@@ -94,7 +94,7 @@ html[xmlns] .flexslider .slides {
   -moz-user-select: none;
 }
 .flex-viewport {
-  max-height: 2000px;
+  max-height: 1000px;
   -webkit-transition: all 1s ease;
   -moz-transition: all 1s ease;
   -ms-transition: all 1s ease;
@@ -184,7 +184,7 @@ html[xmlns] .flexslider .slides {
   z-index: 10;
   overflow: hidden;
   cursor: pointer;
-  color: #000;
+  color: #c4373c;
 }
 .flex-pauseplay a:before {
   font-family: "flexslider-icon";

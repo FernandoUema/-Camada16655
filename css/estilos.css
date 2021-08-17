@@ -24,17 +24,6 @@ html, body {
     z-index:-2;
     padding-top:0;
 }	
-/* Font-face Icons */
-@font-face {
-	font-family: 'flexslider-icon';
-	src:url('../fonts/flexslider-icon.eot');
-	src:url('../fonts/flexslider-icon.eot?#iefix') format('embedded-opentype'),
-		url('../fonts/flexslider-icon.woff') format('woff'),
-		url('../fonts/flexslider-icon.ttf') format('truetype'),
-		url('../fonts/flexslider-icon.svg#flexslider-icon') format('svg');
-	font-weight: normal;
-	font-style: normal;
-}
 
 * {
     Margin:0; 
@@ -1114,24 +1103,14 @@ body::-webkit-scrollbar-thumb {
   justify-content: center;
   */
 
-.left_side{
-    float: left;
-    width:100%;
-}
+
+
 .caja__cv--img{
     padding: 0;
     margin: 0;
 }
 
-.cv__sticky--img{
-    position: relative;
-}
-.blackside {
-    display:inline-block
-}
-.sticky-div.fixed{
-    position:fixed;
-}
+
 .sticky-div.footstick{
     position:absolute; 
     bottom:0; 
@@ -1148,19 +1127,52 @@ body::-webkit-scrollbar-thumb {
     z-index: 2;
     min-height: 100vh;
 }
+.caja__cronologias--start{
+    margin-bottom: 1rem;
+    margin-top: 12rem;
+}
+#cv .tipo__cronologias--individuales-start{ 
+    font-family: 'Playfair Display', serif;
+    font-weight: 500;
+    font-size: 1.6rem;
+    font-kerning: none;
+    color:#2d2e2f;
+    font-style: italic;
+    margin-bottom: 0px;
+    padding-top:8rem;
+    letter-spacing: 1px;
+}
 
-#cv .tipo__cv-red-tit{
+#cv .tipo__cronologias-red-tit{
     font-family: 'Playfair Display', serif;
     color: #c4373c;
     font-size: 6rem;
     font-weight: 800;
     font-style: italic;
-    text-align:left;
-    margin-left: 310px;
-    letter-spacing: 10px;
+    text-align:right;
+    letter-spacing: 4px;
     line-height: 0.5rem;
-    padding-top:100%;
     position: absolute;
+    margin-bottom: 2rem;
+}
+.articulo{
+    padding-left: -10px;
+}
+.tipo__cv-seccion-tit{
+    font-family: 'Playfair Display', serif;
+    color: #ac8fac;
+    font-size: 1.5rem;
+    font-weight: 400;
+    font-style: italic;
+    text-align:left;
+    letter-spacing: 1px;
+    line-height: 0.5rem;
+    position: absolute;
+    margin-top: 35rem;
+    padding-left: 3.5rem;
+}
+.caja__slider{
+    padding-top: 2rem;
 }
 /* -------------------------------------------------------------------------- */
 /*                                   
@@ -1171,16 +1183,16 @@ body::-webkit-scrollbar-thumb {
 .individuales, .colectivas, .premios{
     z-index: 2;
 }
-.container__desplegable--qa{
-    margin-right:5.2%;
-    margin-top: 18px;
+.caja__vermas--start{
+    margin-top: 0.9rem;
     display: flex;
     flex-direction: row;
     flex-flow: row nowrap;
     align-items: baseline; 
     justify-content: space-between;
 }
-.text__desplegable--qa{
+
+.caja__vermas--next{
     margin-top: 16px;
 }
 
@@ -1191,7 +1203,7 @@ body::-webkit-scrollbar-thumb {
 }
 .qa input {
     display:none;
-  }
+}
 .qa label {
     font-family: 'Playfair Display', serif;
     display:block;
@@ -1211,7 +1223,7 @@ body::-webkit-scrollbar-thumb {
     color:#f6f5f3;
     text-align:center;
     margin-right: 20px;
-  }
+}
 
 .qa div {
     display:none;
@@ -1236,15 +1248,7 @@ body::-webkit-scrollbar-thumb {
     line-height: 2rem;
 }
 
-#cv .titulo__cv--start{ 
-    font-family: 'Playfair Display', serif;
-    font-weight: 500;
-    font-size: 1.6rem;
-    font-kerning: none;
-    color:#2d2e2f;
-    font-style: italic;
-    margin-bottom: 0px;
-}
+
 #cv .titulo__cv--next{ 
     font-family: 'Playfair Display', serif;
     font-weight: 500;
@@ -1272,11 +1276,10 @@ body::-webkit-scrollbar-thumb {
 }
 
 
+
 #cv .container__txt--cv{
     width:auto;
-    margin-bottom: 30px;
     position: relative;
-    margin-top: 10rem;
 }
 .aside{
     width:100%; 
@@ -1294,7 +1297,7 @@ body::-webkit-scrollbar-thumb {
     margin-right: 20px;
 }
 /*año tipo*/
-#cv .txt__anio{
+#cv .tipo__cronologias--anio{
     font-family: 'Nunito', sans-serif;
     color:#2d2e2f;
     font-weight: 700;
@@ -1347,7 +1350,6 @@ body::-webkit-scrollbar-thumb {
     margin-bottom: 20px;
     display: block;
     margin-top:-3105px; /*a reposicionar con grid*/
-
 }
 .text__right-descripcion{
     font-family: 'Jost', sans-serif;
