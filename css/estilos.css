@@ -24,7 +24,17 @@ html, body {
     z-index:-2;
     padding-top:0;
 }	
-
+/* Font-face Icons */
+@font-face {
+	font-family: 'flexslider-icon';
+	src:url('../fonts/flexslider-icon.eot');
+	src:url('../fonts/flexslider-icon.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/flexslider-icon.woff') format('woff'),
+		url('../fonts/flexslider-icon.ttf') format('truetype'),
+		url('../fonts/flexslider-icon.svg#flexslider-icon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
 
 * {
     Margin:0; 
@@ -1104,10 +1114,29 @@ body::-webkit-scrollbar-thumb {
   justify-content: center;
   */
 
+.left_side{
+    float: left;
+    width:100%;
+}
+.caja__cv--img{
+    padding: 0;
+    margin: 0;
+}
+
 .cv__sticky--img{
     position: relative;
 }
-
+.blackside {
+    display:inline-block
+}
+.sticky-div.fixed{
+    position:fixed;
+}
+.sticky-div.footstick{
+    position:absolute; 
+    bottom:0; 
+    top:inherit!important
+}
 
 #cv .caja__img--sticky-left{
     top:0;
@@ -1127,7 +1156,7 @@ body::-webkit-scrollbar-thumb {
     font-weight: 800;
     font-style: italic;
     text-align:left;
-    margin-left: 300px;
+    margin-left: 310px;
     letter-spacing: 10px;
     line-height: 0.5rem;
     padding-top:100%;
@@ -1140,7 +1169,7 @@ body::-webkit-scrollbar-thumb {
 /* -------------------------------------------------------------------------- */
 
 .individuales, .colectivas, .premios{
-    z-index: 990;
+    z-index: 2;
 }
 .container__desplegable--qa{
     margin-right:5.2%;
@@ -1242,22 +1271,22 @@ body::-webkit-scrollbar-thumb {
     margin-bottom: 1.7rem;
 }
 
-/*contenedor*//*___________________________________________________GRIDr*/
+
 #cv .container__txt--cv{
     width:auto;
-    margin-left: 500px;
-    margin-top:-680px; 
     margin-bottom: 30px;
-    display: block;
-    margin-right: 20px;
+    position: relative;
+    margin-top: 10rem;
 }
-#cv .container__txt--cv-last{
-    width:auto;
-    margin-left: 500px;
-    margin-top:20px; 
-    display: block;
-    margin-right: 20px;
+.aside{
+    width:100%; 
+    float: right;
 }
+
+.container__txt--cv{
+    display:inline-block;
+}
+
 #cv .container__txt--cv-medium{
     width:auto;
     margin-left: 500px;

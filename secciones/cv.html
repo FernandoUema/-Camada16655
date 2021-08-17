@@ -37,6 +37,15 @@
     <link rel="stylesheet" href="../css/font-awesome.min.css">
     <link rel="stylesheet" href="../css/ionicons.min.css">
 <!-- Cierra Íconos -->
+<!-- abre Slider  -->
+<!-- Syntax Highlighter -->
+<link href="../css/shCore.css" rel="stylesheet" type="text/css" />
+<link href="../css/shThemeDefault.css" rel="stylesheet" type="text/css" />
+<!-- Demo CSS -->
+  <link rel="stylesheet" href="../flexslider.css" type="text/css" media="screen" />
+
+
+<!--cierra slider-->
 </head>
 <!-- Cierra HTML General head-->
 <!-- Abre Animaciones-->
@@ -83,24 +92,25 @@ if ("loading" in HTMLImageElement.prototype) {
 </header>
 
 <!-- Cierra HTML General Menú--> 
-
+<!--https://stackoverflow.com/questions/31944691/bootstrap-5-column-layout-->
 <!-- Abre CV FOTOS +WEB MARINA https://constelacionfemenina.wordpress.com/#jp-carousel-195-->
 <main class="cv__sticky--img"> 
 <section id="cv">
-        <div class="caja__img--sticky-left">
-            <p class="tipo__cv-red-tit">~cv</p>
-            <img src="../img/cv/inestaller.jpg" alt="En el taller">
-        </div>
-        <!--<div class="container__titulo-center">
-            <p class="text__right-descripcion">Inés nace en Buenos Aires en 1950 - Argentina.
-            Se gradúo en las Escuelas de Bellas Artes de Buenos Aires,
-            Manuel Belgrano y Prilidiano Pueyrredón.</p>
-        </div>-->
-<!-- contenido curriculum vitae__individuales -->
-<div class="individuales">
-    <div class="container__titulo--cv-start">
-    </div>
-    <div class="container__txt--cv">
+    <div class="individuales">
+        <div class="container-fluid">
+            <div class="row no-gutters">
+                <div class="caja__cv--img col-xs-3 col-md-5 col-lg-5 col-sm-6"><!--<div class="col-sm-3">-->
+                    <div class="left_side">
+                        <div class="wrap"></div>
+                        <div class="blackside sticky-div">
+                            <div class="caja__img--sticky-left">
+                            <p class="tipo__cv-red-tit">~cv</p>
+                            <img src="../img/cv/inestaller.jpg" alt="En el taller">
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+        <div class="col-xs-9 col-md-7 col-lg-7 col-sm-6 container__txt--cv">
         <p class="titulo__cv--start">Muestras Individuales <span class="subtitulo__cv">[SELECCIÓN]</span></p>
         <p class="txt__anio">2014<span class="none"></span><span class="text__right-descripcion-articulo">«Constelación Femenina», Fundación Mundo Nuevo, Buenos Aires, Argentina.</span></p>
         <p class="txt__anio">2013<span class="none"></span><span class="text__right-descripcion-articulo">«Dibujos y Objetos 2008|2013», Galería Isabel Anchorena, Buenos Aires, Argentina.</span></p>
@@ -130,27 +140,31 @@ if ("loading" in HTMLImageElement.prototype) {
                 </div>
             </div>
         </div>
-    <div class="galeria__cv--individuales"> <!--hover sobre imágenes: https://codepen.io/noeldelgado/pen/pGwFx-->
-        <div class="galeria__item">
-        <img src="../img/cv/catalogo1.png" alt="Catálogos"/>
-        </div>
-        <div class="galeria__item">
-        <img src="../img/cv/catalogo2.png" alt="Catálogos"/>
-        </div>
-        <div class="galeria__item">
-        <img src="../img/cv/Catalogo3.png" alt="Catálogos"/>
-        </div>
-        <div class="galeria__item">
-        <img src="../img/cv/catalogo2.png" alt="Catálogos"/>
-        </div>
+<!--        <div class="galeria__item">
+-->
+     <!--hover sobre imágenes: https://codepen.io/noeldelgado/pen/pGwFx-->
+<div id="carousel">
+     <div class="slider">
+        <div class="flexslider carousel">
+          <ul class="slides">
+            <li><img src="../img/cv/catalogo1.png" alt="Catálogos"/></li>
+            <li><img src="../img/cv/catalogo2.png" alt="Catálogos"/></li>
+            <li><img src="../img/cv/Catalogo3.png" alt="Catálogos"/></li>
+            <li><img src="../img/cv/catalogo2.png" alt="Catálogos"/></li>
+            <li><img src="../img/cv/catalogo1.png" alt="Catálogos"/></li>
+            <li><img src="../img/cv/catalogo2.png" alt="Catálogos"/></li>
+            <li><img src="../img/cv/Catalogo3.png" alt="Catálogos"/></li>
+            <li><img src="../img/cv/catalogo2.png" alt="Catálogos"/></li>
+            </ul>
     </div>
+</div>
+</div>
     <span></span> <span></span>
     <div class="galeria__cv--individuales galeria__cv--individuales-right">
         <p><span class="tipo__epigrafe--titulo-cv salto__linea">Arriba</span> 
         <span class="tipo__epigrafe--sub-cv" >Catálogos 2013 | 2011</span></p><br><!--https://qastack.mx/programming/2703601/how-to-line-break-from-css-without-using-br-->
     </div>
     </div>
-</div>
 <!-- cierra contenido curriculum vitae__individuales -->
 
 <!-- abre contenido curriculum vitae__colectivas -->
@@ -380,19 +394,51 @@ if ("loading" in HTMLImageElement.prototype) {
 </main>
 <!--bootstrap-->
 <script src="../js/jquery.min.js"></script>
-    <!-- Optional JavaScript; choose one of the two! -->
+<!-- Optional JavaScript; choose one of the two! -->
 
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+<!-- Option 1: Bootstrap Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
 
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
-    <!-- Abre JSr-->
+<!-- Option 2: Separate Popper and Bootstrap JS -->
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+<!-- Abre JSr-->
 <script src="../js/jquery-2.1.1.js"></script>
 <script src="../js/jquery.mixitup.min.js"></script>
 <script src="../js/main.js"></script> <!-- Resource jQuery -->
+<script src="../js/stickycv.js"></script><!--https://codepen.io/Roshif/pen/zoVgLb-->
 <!-- Cierra JSr-->
+
+<!-- FlexSlider file:///Users/macbookpro/Downloads/woocommerce-FlexSlider-690832b/demo/basic-carousel.html-->
+  <script defer src="../js/jquery.flexslider.js"></script>
+
+  <script type="text/javascript">
+    $(function(){
+      SyntaxHighlighter.all();
+    });
+    $(window).load(function(){
+      $('.flexslider').flexslider({
+        animation: "slide",
+        animationLoop: false,
+        itemWidth: 210,
+        itemMargin: 5,
+        pausePlay: true,
+        start: function(slider){
+          $('body').removeClass('loading');
+        }
+      });
+    });
+  </script>
+
+  <!-- Syntax Highlighter -->
+  <script type="text/javascript" src="../js/shCore.js"></script>
+  <script type="text/javascript" src="../js/shBrushXml.js"></script>
+  <script type="text/javascript" src="../js/shBrushJScript.js"></script>
+
+  <!-- Optional FlexSlider Additions -->
+  <script src="../js/jquery.easing.js"></script>
+  <script src="../js/jquery.mousewheel.js"></script>
+  <script defer src="../js/demo.js"></script>
 </body>
 </html>
