@@ -73,10 +73,10 @@
 	display: block;
 	text-decoration: none;
 	position: absolute;
-	top: 54%;
+	top: 57%;
 	z-index: 999;
-    width: 30px;
-	height: 30px;
+    width: 25px;
+	height: 25px;
 	overflow: hidden;
 	opacity: 0;
   -webkit-transition: all 0.4s ease-in-out;
@@ -99,16 +99,16 @@
 	display: block;
 	background: url("../img/prev.svg") no-repeat center center;
 	background-size: contain;
-    width: 30px;
-	height: 30px;
+    width: 25px;
+	height: 25px;
   }
   .flex-direction-nav a.flex-next:before {
 	content: " ";
 	display: block;
 	background: url("../img/next.svg") no-repeat center center;
 	background-size: contain;
-    width: 30px;
-	height: 30px;
+    width: 25px;
+	height: 25px;
   }
 
 
