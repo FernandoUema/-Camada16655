@@ -1247,10 +1247,25 @@ body::-webkit-scrollbar-thumb {
     font-style: italic;
   }
 
+  .tipo__white {
+    font-family: 'Nunito', sans-serif;
+    color:#fff;
+    font-weight: 600;
+    font-size: 0.8rem;
+    font-kerning: none;
+    font-style:normal;
+    display:inline;
+    line-height:15px;
+    letter-spacing: 1px;
+    height: 18px;
+    font-size: 1rem;
+    font-style: italic;
+  }
+
 .qa label:before {
     content:"+";
     display:inline-block;
-    height:25px;
+    height:24px;
     width:25px;
     background:#c4373c;
     color:#fff;
