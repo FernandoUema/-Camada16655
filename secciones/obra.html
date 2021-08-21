@@ -54,7 +54,7 @@
 <link rel="stylesheet" href="https://raw.github.com/daneden/animate.css/master/animate.css">
 <link rel="stylesheet" href="../dist/aos.css" />
 
-<!-- Abre Lazy https://carlosazaustre.es/lazy-loading-image -->
+<!-- Abre https://carlosazaustre.es/lazy-loading-image -->
 <script>
 if ("loading" in HTMLImageElement.prototype) {
   console.log("El navegador soporta `lazy-loading`...");
@@ -83,7 +83,7 @@ if ("loading" in HTMLImageElement.prototype) {
                 <li><a href="../index.html" class="hvr__underline--from-left-nav">Acerca</a></li>
                 <li class="#"><a href="obra.html" class="active hvr__underline--from-left-nav">Obra</a></li>
                 <li class="#"><a href="muestra.html" class="hvr__underline--from-left-nav">Muestra Virtual</a></li>
-                <li class="#"><a href="cv.html" class="hvr__underline--from-left-nav">CV</a></li>
+                <li class="#"><a href="crono.html" class="hvr__underline--from-left-nav">Cronologías</a></li>
                 <li class="#"><a href="contacto.html" class="hvr__underline--from-left-nav">Contacto</a></li>
             </ul>
             </nav>
@@ -105,13 +105,6 @@ filtro-ligtbox-->
 https://blog.aulaformativa.com/librerias-css-efectos-hover-imagenes-otros-elementos/
 -->
 
-<!-- <div class="aos-item" data-aos="fade-in">
-        <div class="aos-item__inner"><h3>31</h3></div> </div>
-    <!--versión anterior-->
-
-<!--<div class="container__grid-mosaico">
-    <div class="grid__mosaico--obra-full ">
-        <div class="grid__mosaico--img" data-aos="fade-in"> <!--wrapper lazy placeholder-->
 
 <!--sliders https://fancyapps.com/playground/gk--> 
 
@@ -143,7 +136,7 @@ https://blog.aulaformativa.com/librerias-css-efectos-hover-imagenes-otros-elemen
                 <h3 ><span class="tipo__obra--nombre">_Las Alas,</span><br> <!--“las alas” Carbón, acrílico y pastel sobre tela – 150 x 140 cm – 2009-->
                 <span class="tipo__obra--descripcion-anio">[2009]</span></h3>
             </div>
-            <img class="img-fluid lazy" src="../img/obra/0.png">
+            <img loading="lazy" class="img-fluid " src="../img/obra/0.png">
           </a>
         </div>
         <div class="item esculturas col-lg-3 col-md-4 col-sm-6 mb-4">
@@ -152,12 +145,12 @@ https://blog.aulaformativa.com/librerias-css-efectos-hover-imagenes-otros-elemen
                 <h3 ><span class="tipo__obra--nombre">_La Maga,</span><br>
                     <span class="tipo__obra--descripcion-anio">detalle [1994]</span></h3><!--La Maga, 160 x 53 x 31, tela, guata ,pintura acrilica, base madera pintada, año 1994-->
                   </div>
-                  <img class="img-fluid lazy" src="../img/obra/23.png"/>
+                  <img loading="lazy" class="img-fluid" src="../img/obra/23.png"/>
                   <!--
                  <h3 ><span class="tipo__obra--nombre">_La Luna,</span><br><!-- SACAR LOS BR DEL TITULO DE OBRA
                 <span class="tipo__obra--descripcion-anio">[1995]</span></h3> <!--La luna. Técnica mixta. 161x86x40cm. 1995
             </div>
-            <img class="img-fluid lazy" src="../img/obra/1.png">-->
+            <img loading="lazy" class="img-fluid" src="../img/obra/1.png">-->
           </a>
         </div>
         <div class="item pinturas col-lg-3 col-md-4 col-sm-6 mb-4">
@@ -166,7 +159,7 @@ https://blog.aulaformativa.com/librerias-css-efectos-hover-imagenes-otros-elemen
                  <h3 ><span class="tipo__obra--nombre">_La Buza,</span><br>
                 <span class="tipo__obra--descripcion-anio">[2010]</span></h3> <!-- “la buza” Carbón, acrílico y pastel sobre tela – 130 x 120 cm – 2010-->
             </div>
-            <img class="img-fluid lazy" src="../img/obra/2.png">
+            <img loading="lazy" class="img-fluid" src="../img/obra/2.png">
           </a>
         </div>
         <div class="item dibujos col-lg-3 col-md-4 col-sm-6 mb-4">
@@ -175,7 +168,7 @@ https://blog.aulaformativa.com/librerias-css-efectos-hover-imagenes-otros-elemen
                 <h3 ><span class="tipo__obra--nombre">_El Cielo,</span><br><!-- SACAR LOS BR DEL TITULO DE OBRA-->
                     <span class="tipo__obra--descripcion-anio">detalle [2007]</span></h3><!--“el cielo” Grafito sobre papel – 120 x 100 cm – 2007-->
                 </div>
-                <img class="img-fluid lazy" src="../img/obra/6.png">
+                <img loading="lazy" class="img-fluid" src="../img/obra/6.png">
           </a>
         </div>
 
@@ -185,7 +178,7 @@ https://blog.aulaformativa.com/librerias-css-efectos-hover-imagenes-otros-elemen
                 <h3 ><span class="tipo__obra--nombre">_La Santa,</span><br><!-- SACAR LOS BR DEL TITULO DE OBRA-->
                     <span class="tipo__obra--descripcion-anio">detalle [2018]</span></h3><!--La Santa, 170 x 44 x 27 cm, año 2018, Tela guata, base madera pintada-->
                 </div>
-                <img class="img-fluid lazy" src="../img/obra/5.png">
+                <img loading="lazy" class="img-fluid" src="../img/obra/5.png">
           </a>
         </div>
         <div class="item dibujos col-lg-3 col-md-4 col-sm-6 mb-4">
@@ -194,7 +187,7 @@ https://blog.aulaformativa.com/librerias-css-efectos-hover-imagenes-otros-elemen
                 <h3 ><span class="tipo__obra--nombre">_Hombre Durmiendo en el Cine de Hopper,</span><br>
                     <span class="tipo__obra--descripcion-anio">detalle [2010]</span></h3><!--“HOMBRE DURMIENDO EN EL CINE DE HOPPER” Carbón sobre tela - 120 x 110 cm - año 2010-->
                   </div>
-                  <img class="img-fluid lazy" src="../img/obra/28.png"/>
+                  <img loading="lazy" class="img-fluid" src="../img/obra/28.png"/>
           </a>
         </div>
         <div class="item esculturas col-lg-3 col-md-4 col-sm-6 mb-4">
@@ -203,7 +196,7 @@ https://blog.aulaformativa.com/librerias-css-efectos-hover-imagenes-otros-elemen
                 <h3 ><span class="tipo__obra--nombre">_El Fenómeno,</span><br>
                     <span class="tipo__obra--descripcion-anio">detalle [1991]</span></h3> <!--El Fenomeno, 170 x 60 x 40,año 1991,tla,guata,pintura acrilica base madera,proteccion Plexiglas-->
                 </div>
-                <img class="img-fluid lazy" src="../img/obra/3.png">
+                <img loading="lazy" class="img-fluid" src="../img/obra/3.png">
           </a>
         </div>
         <div class="item esculturas col-lg-3 col-md-4 col-sm-6 mb-4">
@@ -212,7 +205,7 @@ https://blog.aulaformativa.com/librerias-css-efectos-hover-imagenes-otros-elemen
                  <h3 ><span class="tipo__obra--nombre">_Esfinge Blanca,</span><br>
                 <span class="tipo__obra--descripcion-anio">detalle [****]</span></h3><!--Esfinge Blanca,160 x 42 x 15 cm,tela,guata,pintura acrilica,base madera pintada, proteccion Plexiglass-->
             </div>
-            <img class="img-fluid lazy" src="../img/obra/7.png">
+            <img loading="lazy" class="img-fluid" src="../img/obra/7.png">
           </a>
         </div>
 
@@ -222,7 +215,7 @@ https://blog.aulaformativa.com/librerias-css-efectos-hover-imagenes-otros-elemen
                  <h3 ><span class="tipo__obra--nombre">_Amanecer,</span><br>
                 <span class="tipo__obra--descripcion-anio">[2009]</span></h3><!--Amanecer ,150x140 cm, Acrlico,pastel tiza,sobre tela, año 2009-->
             </div>
-            <img class="img-fluid lazy" src="../img/obra/8.png">
+            <img loading="lazy" class="img-fluid" src="../img/obra/8.png">
           </a>
         </div>
         <div class="item esculturas col-lg-3 col-md-4 col-sm-6 mb-4">
@@ -231,7 +224,7 @@ https://blog.aulaformativa.com/librerias-css-efectos-hover-imagenes-otros-elemen
                  <h3 ><span class="tipo__obra--nombre">_Fuego en el mar,</span><br>
                 <span class="tipo__obra--descripcion-anio">detalle [1999]</span></h3><!--Fuego en el Mar, 120 x 100 x 18 cmt ,año 1999,tela,guata,pintura acrilica, caja madera -->
             </div>
-            <img class="img-fluid lazy" src="../img/obra/9.png">
+            <img loading="lazy" class="img-fluid" src="../img/obra/9.png">
           </a>
         </div> 
         <div class="item esculturas col-lg-3 col-md-4 col-sm-6 mb-4">
@@ -240,7 +233,7 @@ https://blog.aulaformativa.com/librerias-css-efectos-hover-imagenes-otros-elemen
                 <h3 ><span class="tipo__obra--nombre">_************,</span><br>
                     <span class="tipo__obra--descripcion-anio">detalle [***]</span></h3>
                   </div>
-                  <img class="img-fluid lazy" src="../img/obra/18.png"/>
+                  <img loading="lazy" class="img-fluid" src="../img/obra/18.png"/>
           </a>
         </div>
 
@@ -250,7 +243,7 @@ https://blog.aulaformativa.com/librerias-css-efectos-hover-imagenes-otros-elemen
                  <h3 ><span class="tipo__obra--nombre">_Las Zapatillas Rojas,</span><br>
                 <span class="tipo__obra--descripcion-anio">[2010]</span></h3><!--Las Zapatillas Rojas, año 2010, 40 x 30 x 15,zapatillas de lona,tela,guata,pintura acrilcia,base madera pintada-->
             </div>
-            <img class="img-fluid" src="../img/obra/11.png"/>
+            <img loading="lazy" class="img-fluid" src="../img/obra/11.png"/>
         </a>
         </div>
         <div class="item esculturas col-lg-3 col-md-4 col-sm-6 mb-4">
@@ -259,7 +252,7 @@ https://blog.aulaformativa.com/librerias-css-efectos-hover-imagenes-otros-elemen
                  <h3 ><span class="tipo__obra--nombre">_Ángel Musicante,</span><br>
                 <span class="tipo__obra--descripcion-anio">detalle [1998]</span></h3><!--Angel musicante,120x 100x15 cm,año 1998,tela guata, pintura acrilica,caja madera pintada-->
             </div>
-            <img class="img-fluid lazy" src="../img/obra/12.png"/>
+            <img loading="lazy" class="img-fluid" src="../img/obra/12.png"/>
         </a>
         </div>
 
@@ -269,7 +262,7 @@ https://blog.aulaformativa.com/librerias-css-efectos-hover-imagenes-otros-elemen
                  <h3 ><span class="tipo__obra--nombre">_Reina Americana,</span><br>
                 <span class="tipo__obra--descripcion-anio">detalle [2002]</span></h3><!--Reina Americana,170 x 54 x 32 cm,tela,guata,pintura acrilica, base madera pintada,protec Plexiglass,año 2002,-->
               </div>
-              <img class="img-fluid lazy" src="../img/obra/13.png"/>
+              <img loading="lazy" class="img-fluid" src="../img/obra/13.png"/>
             </a>
           </div>
   
@@ -279,7 +272,7 @@ https://blog.aulaformativa.com/librerias-css-efectos-hover-imagenes-otros-elemen
                  <h3 ><span class="tipo__obra--nombre">_Nadando en la Mañana,</span><br>
                 <span class="tipo__obra--descripcion-anio">[2012]</span></h3><!--“NADANDO EN LA MAÑANA” Carbón, pastel y acrilico sobre tela - 150 x 170 cm - año 2012-->
               </div>
-              <img class="img-fluid lazy" src="../img/obra/14.png"/>
+              <img loading="lazy" class="img-fluid" src="../img/obra/14.png"/>
             </a>
           </div>
           <div class="item dibujos col-lg-3 col-md-4 col-sm-6 mb-4">
@@ -288,7 +281,7 @@ https://blog.aulaformativa.com/librerias-css-efectos-hover-imagenes-otros-elemen
                  <h3 ><span class="tipo__obra--nombre">_Un Balboa,</span><br>
                 <span class="tipo__obra--descripcion-anio">detalle [2001]</span></h3><!--Un Balboa,1,20 x 1,40,año 2001, grafito sobre papel.-->
               </div>
-              <img class="img-fluid lazy" src="../img/obra/15.png"/>
+              <img loading="lazy" class="img-fluid" src="../img/obra/15.png"/>
             </a>
           </div>
           <div class="item esculturas col-lg-3 col-md-4 col-sm-6 mb-4">
@@ -297,7 +290,7 @@ https://blog.aulaformativa.com/librerias-css-efectos-hover-imagenes-otros-elemen
                  <h3 ><span class="tipo__obra--nombre">_La Delfina en la Nieve,</span><br>
                 <span class="tipo__obra--descripcion-anio">detalle [2013]</span></h3><!--La Delfina en la nieve,120 x 95 x 19 cm, año 2013, tela,guata,pint acril,caja madera pintada-->
               </div>
-              <img class="img-fluid lazy" src="../img/obra/16.png"/>
+              <img loading="lazy" class="img-fluid" src="../img/obra/16.png"/>
             </a>
           </div>
           <div class="item esculturas col-lg-3 col-md-4 col-sm-6 mb-4">
@@ -306,7 +299,7 @@ https://blog.aulaformativa.com/librerias-css-efectos-hover-imagenes-otros-elemen
                  <h3 ><span class="tipo__obra--nombre">_Interior,</span><br>
                 <span class="tipo__obra--descripcion-anio">detalle [1989]</span></h3><!--Interior,1.70 x 60 x 35, año 1989,tela,guata,pintura acrilica,base madera, coleccion Museo Nacional de Bellas Artes.tif-->
               </div>
-              <img class="img-fluid lazy" src="../img/obra/17.png"/>
+              <img loading="lazy" class="img-fluid" src="../img/obra/17.png"/>
             </a>
           </div>
           <div class="item pinturas col-lg-3 col-md-4 col-sm-6 mb-4">
@@ -315,7 +308,7 @@ https://blog.aulaformativa.com/librerias-css-efectos-hover-imagenes-otros-elemen
                 <h3 ><span class="tipo__obra--nombre">_El Antifaz,</span><br>
                     <span class="tipo__obra--descripcion-anio">detalle [2010]</span></h3> <!--“EL ANTIFAZ” Carbón, acrílico y pastel sobre tela – 100 x 130 cm – 2010-->
                 </div>
-                <img class="img-fluid lazy" src="../img/obra/10.png">
+                <img loading="lazy" class="img-fluid" src="../img/obra/10.png">
             </a>
           </div>
           <div class="item esculturas col-lg-3 col-md-4 col-sm-6 mb-4">
@@ -324,7 +317,7 @@ https://blog.aulaformativa.com/librerias-css-efectos-hover-imagenes-otros-elemen
                 <h3 ><span class="tipo__obra--nombre">_**********</span><br>
                     <span class="tipo__obra--descripcion-anio">detalle [****]</span></h3>
                   </div>
-                  <img class="img-fluid lazy" src="../img/obra/24.png"/>
+                  <img loading="lazy" class="img-fluid" src="../img/obra/24.png"/>
             </a>
           </div>
           <div class="item pinturas col-lg-3 col-md-4 col-sm-6 mb-4">
@@ -333,7 +326,7 @@ https://blog.aulaformativa.com/librerias-css-efectos-hover-imagenes-otros-elemen
                  <h3 ><span class="tipo__obra--nombre">_La Luna,</span><br>
                 <span class="tipo__obra--descripcion-anio">detalle [2008]</span></h3><!--“LA LUNA” Carbón, pastel y acrilico sobre tela - 150 x 140 cm - año 2008-->
               </div>
-              <img class="img-fluid lazy" src="../img/obra/21.png">
+              <img loading="lazy" class="img-fluid" src="../img/obra/21.png">
             </a>
           </div>
           <div class="item esculturas col-lg-3 col-md-4 col-sm-6 mb-4">
@@ -342,7 +335,7 @@ https://blog.aulaformativa.com/librerias-css-efectos-hover-imagenes-otros-elemen
                 <h3 ><span class="tipo__obra--nombre">_Soleil Azul,</span><br>
                     <span class="tipo__obra--descripcion-anio">detalle [2016]</span></h3><!--Soleil Azul,140x21x21,2016,-->
                   </div>
-                  <img class="img-fluid lazy" src="../img/obra/20.png">
+                  <img loading="lazy" class="img-fluid" src="../img/obra/20.png">
             </a>
           </div>
           <div class="item dibujos col-lg-3 col-md-4 col-sm-6 mb-4">
@@ -351,7 +344,7 @@ https://blog.aulaformativa.com/librerias-css-efectos-hover-imagenes-otros-elemen
                 <h3 ><span class="tipo__obra--nombre">_La Anguila,</span><br>
                     <span class="tipo__obra--descripcion-anio">detalle [2000]</span></h3><!--“la anguila” Grafito sobre papel – 110 x 100 cm – 2000-->
                   </div>
-                  <img class="img-fluid lazy" src="../img/obra/30.png">
+                  <img loading="lazy" class="img-fluid" src="../img/obra/30.png">
           </a>
           </div>
           <div class="item pinturas col-lg-3 col-md-4 col-sm-6 mb-4">
@@ -360,7 +353,7 @@ https://blog.aulaformativa.com/librerias-css-efectos-hover-imagenes-otros-elemen
                 <h3 ><span class="tipo__obra--nombre">_Almalibro,</span><br>
                     <span class="tipo__obra--descripcion-anio">detalle [2009]</span></h3><!--“almalibro” Carbón, acrílico y pastel sobre tela – 150 x 120 cm – 2009-->
                   </div>
-                  <img class="img-fluid lazy" src="../img/obra/31.png"/>
+                  <img loading="lazy" class="img-fluid" src="../img/obra/31.png"/>
 
 
           </a>
@@ -371,7 +364,7 @@ https://blog.aulaformativa.com/librerias-css-efectos-hover-imagenes-otros-elemen
                 <h3 ><span class="tipo__obra--nombre">_**********</span><br>
                 <span class="tipo__obra--descripcion-anio">detalle [****]</span></h3>
               </div>
-              <img class="img-fluid lazy" src="../img/obra/25.png">
+              <img loading="lazy" class="img-fluid" src="../img/obra/25.png">
             </a>
           </div>
           <div class="item esculturas col-lg-3 col-md-4 col-sm-6 mb-4">
@@ -380,7 +373,7 @@ https://blog.aulaformativa.com/librerias-css-efectos-hover-imagenes-otros-elemen
                  <h3 ><span class="tipo__obra--nombre">_El Alemán,</span><br>
                 <span class="tipo__obra--descripcion-anio">detalle [2002]</span></h3><!--El Aleman, 34 x 27 x 12,año  2002,tela,guata,pintura acrilica ,caja madera pintada-->
               </div>
-              <img class="img-fluid lazy" src="../img/obra/26.png">
+              <img loading="lazy" class="img-fluid" src="../img/obra/26.png">
             </a>
           </div>
   
@@ -390,7 +383,7 @@ https://blog.aulaformativa.com/librerias-css-efectos-hover-imagenes-otros-elemen
                 <h3 ><span class="tipo__obra--nombre">_El Delfín,</span><br>
                     <span class="tipo__obra--descripcion-anio">detalle [1997]</span></h3><!--El Delfin, año 1997,tela,guata,pintura acrilica,base madera pintada-->
                 </div>
-                <img class="img-fluid lazy" src="../img/obra/4.png">
+                <img loading="lazy" class="img-fluid" src="../img/obra/4.png">
           </a>
           </div>
           <div class="item esculturas col-lg-3 col-md-4 col-sm-6 mb-4">
@@ -399,7 +392,7 @@ https://blog.aulaformativa.com/librerias-css-efectos-hover-imagenes-otros-elemen
                 <h3 ><span class="tipo__obra--nombre">_La Reina de la Noche,</span><br>
                     <span class="tipo__obra--descripcion-anio">detalle [2010]</span></h3><!--La reina dela noche, 1,60x 50 x 25, 2010 (2)-->
                   </div>
-                  <img class="img-fluid lazy" src="../img/obra/27.png"/>
+                  <img loading="lazy" class="img-fluid" src="../img/obra/27.png"/>
           </a>
           </div>
           <div class="item esculturas col-lg-3 col-md-4 col-sm-6 mb-4">
@@ -408,7 +401,7 @@ https://blog.aulaformativa.com/librerias-css-efectos-hover-imagenes-otros-elemen
                 <h3 ><span class="tipo__obra--nombre">_**********</span><br>
                     <span class="tipo__obra--descripcion-anio">detalle [****]</span></h3>
                   </div>
-                  <img class="img-fluid lazy" src="../img/obra/22.png">
+                  <img loading="lazy" class="img-fluid" src="../img/obra/22.png">
             </a>
           </div>
           <div class="item dibujos col-lg-3 col-md-4 col-sm-6 mb-4">
@@ -417,7 +410,7 @@ https://blog.aulaformativa.com/librerias-css-efectos-hover-imagenes-otros-elemen
                 <h3 ><span class="tipo__obra--nombre">_La Náufraga,</span><br>
                     <span class="tipo__obra--descripcion-anio">detalle [2005]</span></h3><!--“la náufraga” Grafito sobre papel – 90 x 130 cm – 2005-->
                   </div>
-                  <img class="img-fluid lazy" src="../img/obra/29.png">
+                  <img loading="lazy" class="img-fluid" src="../img/obra/29.png">
             </a>
           </div>
   
@@ -427,7 +420,7 @@ https://blog.aulaformativa.com/librerias-css-efectos-hover-imagenes-otros-elemen
                 <h3 ><span class="tipo__obra--nombre">_Soleil,</span><br>
                     <span class="tipo__obra--descripcion-anio">detalle [2013]</span></h3><!--Soleil, Tela, guata, pintura acrílica, base madera pintada y plexiglass, 55 x 25 x 14 cm, 2013-->
                   </div>
-                  <img class="img-fluid lazy" src="../img/obra/32.jpg"/>
+                  <img loading="lazy" class="img-fluid" src="../img/obra/32.jpg"/>
           </a>
           </div>
           <div class="item pinturas col-lg-3 col-md-4 col-sm-6 mb-4">
@@ -436,7 +429,7 @@ https://blog.aulaformativa.com/librerias-css-efectos-hover-imagenes-otros-elemen
                 <h3 ><span class="tipo__obra--nombre">_Nadando Sola,</span><br>
                     <span class="tipo__obra--descripcion-anio">[2010]</span></h3><!--“nadando sola” Carbón, acrílico y pastel sobre tela – 150 x 140 cm – 2010-->
                   </div>
-                  <img class="img-fluid lazy" src="../img/obra/19.png"/>
+                  <img loading="lazy" class="img-fluid" src="../img/obra/19.png"/>
           </a>
           </div>
       </div>
@@ -460,12 +453,12 @@ https://blog.aulaformativa.com/librerias-css-efectos-hover-imagenes-otros-elemen
                 <li><a href="../index.html">Acerca</a></li>
                 <li><a href="obra.html">Obra</a></li>
                 <li><a href="muestra.html">Muestra Virtual</a></li>
-                <li><a href="cv.html">CV</a></li>
+                <li><a href="crono.html">Cronologías</a></li>
                 <li><a href="contacto.html">Contacto</a></li>
             </ul>
             <ul>
-                <li class="footer__media-icono"><a href="https://www.facebook.com/ines.vega.37" class="facebook"><i class="fab fa-facebook"></i></a></li>
-                <li class="footer__media-icono"><a href="https://www.instagram.com/vivainesita/?hl=es-la" class="instagram"> <i class="fab fa-instagram"></i></a></li>                    
+                <li class="footer__media-icono"><a href="https://www.facebook.com/ines.vega.37" class="facebook"><i class="fa-2x fab fa-facebook"></i></a></li>
+                <li class="footer__media-icono"><a href="https://www.instagram.com/vivainesita/?hl=es-la" class="instagram"> <i class="fa-2x fab fa-instagram"></i></a></li>                    
             </ul>
         </div>
     </div>
@@ -495,7 +488,7 @@ https://blog.aulaformativa.com/librerias-css-efectos-hover-imagenes-otros-elemen
 <script src="../js/jquery.mixitup.min.js"></script>
 <!-- Abre JSr para el filtro my portfolio-->
 
-<script src="../js/main.js"></script> <!-- Resource jQuery _ agregue el lazy placeholder-->
+<script src="../js/main.js"></script> <!-- Resource jQuery _ agregue el placeholder-->
 <!-- Cierra JSr-->
 
 <!-- Abre Enlace y activar wow.js -->

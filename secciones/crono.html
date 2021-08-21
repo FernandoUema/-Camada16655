@@ -76,7 +76,7 @@ if ("loading" in HTMLImageElement.prototype) {
                         <li><a href="../index.html" class="hvr__underline--from-left-nav">Acerca</a></li>
                         <li class="#"><a href="obra.html" class="hvr__underline--from-left-nav">Obra</a></li>
                         <li class="#"><a href="muestra.html" class="hvr__underline--from-left-nav">Muestra Virtual</a></li>
-                        <li class="dropdown"><a href="#" class="active hvr__underline--from-left-nav"><span>Cronologías</span><i class="bi bi-chevron-down"></i></a></li>
+                        <li class="dropdown"><a href="#" class="active hvr__underline--from-left-nav"><span>Cronologías</span><i class="fa-2xbi bi-chevron-down"></i></a></li>
                             <!--<ul>
                                   <li><a class="scrollto" href="#MuestrasIndividuales">Muestras Individuales</a></li>
                                   <li><a class="scrollto" href="#MuestrasColectivas">Muestras Colectivas</a></li>
@@ -127,8 +127,27 @@ if ("loading" in HTMLImageElement.prototype) {
 
         <!--<div class="caja__crono--img col-12 col-sm-6 col-md-6 col-lg-8 col-xl-3"></div>
         <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3"> <!--si lo uso en caja__img-->
-        <div class="caja__crono--start col-lg-7 col-md-4 col-sm-6 pe-4">
-        <p class="tipo__crono-red-tit articulo">~Cronologías</p>
+            <!--<div class="bottom">
+                <a style="position:sticky;bottom:5px;right:5px;margin:0;padding:5px 3px;" href="#">Individuales</a>
+            </div>-->
+        <div class="caja__crono--start col-lg-7 col-md-4 col-sm-6 pe-4 mb-2">
+        <p class="tipo__crono-red-tit-articulo">~Cronologías</p>
+
+            <nav id="navbar" class="navbar tipo__crono--subnav pt-5 ms-0">
+                <ul> 
+                    <li><a class="nav-link scrollto pe-1 ps-0" href="#muestras__individuales">Individuales</a></li>
+                    <li><a class="pegado"href="#">~</a></li>
+                    <li><a class="nav-link scrollto pe-1 ps-1" href="#muestras__colectivas">Colectivas</a></li>
+                    <li><a class="pegado"href="#">~</a></li>
+                    <li><a class="nav-link scrollto pe-1 ps-1" href="#los__premios">Premios</a></li>
+                    <li><a class="pegado"href="#">~</a></li>
+                    <li><a class="nav-link scrollto pe-1 ps-1" href="#catalogos">Catálogos</a></li>
+
+                </ul> 
+            </nav>
+            <div class="ancla" id="muestras__individuales">
+        </div>
+        <div class="ps-3 pe-5">
         <p class="tipo__crono--individuales-start">Muestras Individuales <span class="subtitulo__crono">[SELECCIÓN]</span></p>
         <p class="tipo__crono--anio">2014<span class="none"></span><span class="tipo__crono--descripcion-articulo p-e-100">«Constelación Femenina», Fundación Mundo Nuevo, Buenos Aires, Argentina.</span></p>
         <p class="tipo__crono--anio">2013<span class="none"></span><span class="tipo__crono--descripcion-articulo">«Dibujos y Objetos 2008|2013», Galería Isabel Anchorena, Buenos Aires, Argentina.</span></p>
@@ -158,35 +177,33 @@ if ("loading" in HTMLImageElement.prototype) {
                     <p class="tipo__crono--anio">1980<span class="none"></span><span class="tipo__crono--descripcion">Galería Ángelus, Buenos Aires, Argentina.❑</span></p>
                 </div>
             </div>
-        </div>
-     <!--hover sobre imágenes: https://codepen.io/noeldelgado/pen/pGwFx-->
-        <div id="carousel">
-            <div class="slider caja__slider pe-4">
-                <div class="flexslider carousel">
-                <ul class="slides">
-                    <li><img src="../img/crono/catalogo1.png" alt="Catálogos"/></li>
-                    <li><img src="../img/crono/catalogo2.png" alt="Catálogos"/></li>
-                    <li><img src="../img/crono/Catalogo3.png" alt="Catálogos"/></li>
-                    <li><img src="../img/crono/catalogo2.png" alt="Catálogos"/></li>
-                    <li><img src="../img/crono/catalogo1.png" alt="Catálogos"/></li>
-                    <li><img src="../img/crono/catalogo2.png" alt="Catálogos"/></li>
-                    <li><img src="../img/crono/Catalogo3.png" alt="Catálogos"/></li>
-                    <li><img src="../img/crono/catalogo2.png" alt="Catálogos"/></li>
-                    </ul>
-                </div>
+            </div> 
             </div>
-        </div>
-    <span></span> <span></span>
-        <div class="galeria__crono--individuales galeria__crono--individuales-right">
-            <p><span class="tipo__epigrafe--titulo-crono salto__linea pe-4">Arriba</span> 
-            <span class="tipo__epigrafe--sub-crono pe-4">Catálogos 2013 | 2011</span></p><br><!--https://qastack.mx/programming/2703601/how-to-line-break-from-css-without-using-br-->
-        </div>
+            <div id="carousel">
+                <div class="slider caja__slider pe-4 ps-3 mt-4">
+                    <div class="flexslider carousel">
+                    <ul class="slides">
+                        <li><img src="../img/crono/catalogo1.png" alt="Catálogos"/></li>
+                        <li><img src="../img/crono/catalogo2.png" alt="Catálogos"/></li>
+                        <li><img src="../img/crono/Catalogo3.png" alt="Catálogos"/></li>
+                        <li><img src="../img/crono/catalogo2.png" alt="Catálogos"/></li>
+                        <li><img src="../img/crono/catalogo1.png" alt="Catálogos"/></li>
+                        <li><img src="../img/crono/catalogo2.png" alt="Catálogos"/></li>
+                        <li><img src="../img/crono/Catalogo3.png" alt="Catálogos"/></li>
+                        <li><img src="../img/crono/catalogo2.png" alt="Catálogos"/></li>
+                        </ul>
+
+                    </div>
+                </div>
+                <div class="ancla" id="muestras__colectivas"></div>
+            </div>
 
 <!-- cierra contenido curriculum vitae__individuales -->
 
 <!-- abre contenido curriculum vitae__colectivas -->
 <div class="colectivas">   
-<div class="caja__crono--medium pe-4">
+<div class="caja__crono--medium">
+    <div class="ps-3 pe-5 mt-5">
     <p class="tipo__crono--next">Muestras Colectivas <span class="subtitulo__crono">[SELECCIÓN]</span></p>  
     <p class="tipo__crono--anio">2020<span class="none"></span><span class="tipo__crono--descripcion-articulo">«Mujer, energía creadora», Centro Cultural Eva Perón, Ministerio de Economía, Buenos Aires, Argentina.</span></p>
     <p class="tipo__crono--anio">2019<span class="none"></span><span class="tipo__crono--descripcion">Centro Cultural La Blanco Encalada, Buenos Aires, Argentina.</span></p>
@@ -290,8 +307,9 @@ if ("loading" in HTMLImageElement.prototype) {
 </div>
 </div>
 </div> 
+</div>
 <div id="carousel">
-    <div class="slider caja__slider">
+    <div class="slider caja__slider pe-4 ps-3 mt-4">
         <div class="flexslider carousel">
         <ul class="slides">
             <li><img src="../img/crono/catalogo1.png" alt="Catálogos"/></li>
@@ -306,16 +324,17 @@ if ("loading" in HTMLImageElement.prototype) {
         </div>
     </div>
 </div>
-<span></span> <span></span>
 <div class="galeria__crono--individuales galeria__crono--individuales-right">
     <p><span class="tipo__epigrafe--titulo-crono salto__linea">Arriba</span> 
     <span class="tipo__epigrafe--sub-crono">Catálogos 2013 | 2011</span></p><br><!--https://qastack.mx/programming/2703601/how-to-line-break-from-css-without-using-br-->
 </div>
-    </div>
+<div class="ancla" id="los__premios"></div>
+
 </div>
 
 <div class="premios">
-<div class="caja__crono--medium pe-4">
+<div class="caja__crono--medium">
+    <div class="ps-3 pe-5 mt-5">
     <p class="tipo__crono--next">Premios<span class="subtitulo__crono">[SELECCIÓN]</span></p>
     <p class="tipo__crono--anio">2004<span class="none"></span><span class="tipo__crono--descripcion">1º Premio «IX Bienal de Arte Sacro», Centro Cultural Borges, Buenos Aires, Argentina.</span></p>
     <p class="tipo__crono--anio">2004<span class="none"></span><span class="tipo__crono--descripcion">2º Premio, «Premio Rioplatense de Artes Visuales Fundación OSDE», Sección Metropolitana, «Imago», Buenos Aires, Argentina.</span></p>
@@ -342,11 +361,12 @@ if ("loading" in HTMLImageElement.prototype) {
         <p class="tipo__crono--anio">1979<span class="none"></span><span class="tipo__crono--descripcion">Mención «Salón Cerealista», Buenos Aires, Argentina.</span></p>
         <p class="tipo__crono--anio">1978<span class="none"></span><span class="tipo__crono--descripcion">Premio Salón Anual de Manchas, Museo Sívori, Buenos Aires, Argentina.</span></p>
         <p class="tipo__crono--anio">1977<span class="none"></span><span class="tipo__crono--descripcion">1º Premio, Salón Nacional para Estudiantes de Bellas Artes, Salas Nacionales, Buenos Aires, Argentina.❑</span></p>
+    </div>
 </div>
-</div>
+</div> 
 </div>
 <div id="carousel">
-    <div class="slider caja__slider">
+    <div class="slider pe-4 ps-3 mt-4">
         <div class="flexslider carousel">
         <ul class="slides">
             <li><img src="../img/crono/catalogo1.png" alt="Catálogos"/></li>
@@ -361,11 +381,32 @@ if ("loading" in HTMLImageElement.prototype) {
         </div>
     </div>
 </div>
-<span></span> <span></span>
-<div class="galeria__crono--individuales galeria__crono--individuales-right">
-    <p><span class="tipo__epigrafe--titulo-crono salto__linea">Arriba</span> 
-    <span class="tipo__epigrafe--sub-crono">Catálogos 2013 | 2011</span></p><br><!--https://qastack.mx/programming/2703601/how-to-line-break-from-css-without-using-br-->
 </div>
+</div>
+<div class="ancla" id="catalogos"></div>
+
+</div>
+
+<div class="catalogo">
+<div class="caja__crono--medium-catalogo">
+    <div class="ps-3 pe-5 mt-5 mb-5">
+    <p class="tipo__crono--next">Catálogos 2011 | 2013<span class="subtitulo__crono">[HACER CLICK PARA DESCARGAR]</span></p>
+<div class="galeria__cv--individuales"> <!--hover sobre imágenes: https://codepen.io/noeldelgado/pen/pGwFx-->
+    <div class="galeria__item">
+    <img class="catalogo__img" src="../img/crono/catalogo1.png" alt="Catálogos"/>
+    </div>
+    <div class="galeria__item">
+        <img class="catalogo__img" src="../img/crono/catalogo2.png" alt="Catálogos"/>
+    </div>
+    <div class="galeria__item">
+        <img class="catalogo__img" src="../img/crono/Catalogo3.png" alt="Catálogos"/>
+    </div>
+    <div class="galeria__item">
+        <img class="catalogo__img" src="../img/crono/catalogo2.png" alt="Catálogos"/>
+    </div>
+</div>
+</div>
+
     <div class="caja__ph--copyright-izq">
         <p><span class="tipo__ph--ubicacion-izq">Izq</span> </p>
         <div class="tipo__ph--copyright">Ph: Alicia Schemper ©2020</div>
@@ -374,8 +415,7 @@ if ("loading" in HTMLImageElement.prototype) {
 </div>
 </div>
 </div>
-</div>
-</div>
+
 </section>
 
 <!-- Cierra crono--> 
@@ -392,8 +432,8 @@ if ("loading" in HTMLImageElement.prototype) {
                 <li><a href="contacto.html">Contacto</a></li>
             </ul>
             <ul>
-                <li class="footer__media-icono"><a href="https://www.facebook.com/ines.vega.37" class="facebook"><i class="fab fa-facebook"></i></a></li>
-                <li class="footer__media-icono"><a href="https://www.instagram.com/vivainesita/?hl=es-la" class="instagram"> <i class="fab fa-instagram"></i></a></li>                    
+                <li class="footer__media-icono"><a href="https://www.facebook.com/ines.vega.37" class="facebook"><i class="fa-2x fab fa-facebook"></i></a></li>
+                <li class="footer__media-icono"><a href="https://www.instagram.com/vivainesita/?hl=es-la" class="instagram"> <i class="fa-2x fab fa-instagram"></i></a></li>                    
             </ul>
         </div>
     </div>
@@ -435,23 +475,7 @@ if ("loading" in HTMLImageElement.prototype) {
 <script type="text/javascript" src="../js/shBrushXml.js"></script>
 <script type="text/javascript" src="../js/shBrushJScript.js"></script>
 <!--cambiar tamaño de img en itemwidth https://www.it-swarm-es.com/es/javascript/tamano-fijo-de-flexslider/1068905659/-->
-<script type="text/javascript">
-    $(function(){
-      SyntaxHighlighter.all();
-    });
-    $(window).load(function(){
-      $('.flexslider').flexslider({
-        animation: "slide",
-        animationLoop: true,
-        itemWidth: 145,
-        itemMargin: 10,
-        pausePlay: true,
-        start: function(slider){
-          $('body').removeClass('loading');
-        }
-      });
-    });
-  </script>
+
 
   <script src="../js/jquery.easing.js"></script>
   <script src="../js/jquery.mousewheel.js"></script>
@@ -460,9 +484,22 @@ if ("loading" in HTMLImageElement.prototype) {
   <link rel="stylesheet" href="../css/flexslider_basic.css" type="text/css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
   <script src="../js/jquery.flexslider.js"></script>
+  
   <!-- Optional FlexSlider Additions --><!-- FlexSlider file:///Users/macbookpro/Downloads/woocommerce-FlexSlider-690832b/demo/basic-carousel.html-->
-  <script defer src="../js/jquery.flexslider.js"></script>
-
+  <script type="text/javascript">
+    $(window).load(function(){
+      $('.flexslider').flexslider({
+        animation: "slide",
+        animationLoop: true,
+        itemWidth: 140,
+        itemMargin: 10,
+        pausePlay: true,
+        start: function(slider){
+        $('body').removeClass('loading');
+        }
+      });
+    });
+  </script>
   <script type="text/javascript" charset="utf-8">
   (function() {
  // store the slider in a local variable
@@ -483,7 +520,7 @@ if ("loading" in HTMLImageElement.prototype) {
    $('.flexslider').flexslider({
      animation: "slide",
      animationLoop: false,
-     itemWidth: 150,
+     itemWidth: 140,
      itemMargin: 10,
      minItems: getGridSize(2), // use function to pull in initial value
      maxItems: getGridSize(3) // use function to pull in initial value

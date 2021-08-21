@@ -154,7 +154,9 @@ body::-webkit-scrollbar-thumb {
 }
 .caja__ph--copyright-izq{
     line-height: 0;
-    padding-bottom: 2rem;
+    padding-bottom: 1rem;
+    margin-top: 9rem;
+    margin-left: 1rem;
 
 }
 .tipo__ph--ubicacion-izq{
@@ -1132,6 +1134,22 @@ body::-webkit-scrollbar-thumb {
     margin-bottom: 0;  
     z-index: 4;
 }
+.ancla:before {
+    display: block;
+    content: " ";
+    margin-top: -120px;
+    height: 120px;
+    visibility: hidden;
+}
+
+.ancla__1:before {
+    display: block;
+    content: " ";
+    margin-top: -120px;
+    height: 120px;
+    visibility: hidden;
+}
+
 .crono__sticky--img{
     position: relative;
 }
@@ -1166,14 +1184,14 @@ body::-webkit-scrollbar-thumb {
     color:#2d2e2f;
     font-style: italic;
     margin-bottom: 0px;
-    padding-top:8rem;
+    padding-top:3rem;
     letter-spacing: 1px;
 }
 
-#crono .tipo__crono-red-tit{
+#crono .tipo__crono-red-tit-articulo{
     font-family: 'Playfair Display', serif;
     color: #c4373c;
-    font-size: 6rem;
+    font-size: 5rem;
     font-weight: 800;
     font-style: italic;
     text-align:right;
@@ -1181,10 +1199,66 @@ body::-webkit-scrollbar-thumb {
     line-height: 0.5rem;
     position: absolute;
     margin-bottom: 2rem;
+    margin-left: -3rem;
 }
-.articulo{
-    padding-left: -10px;
+/* eliminar las bullets y los números DE INES*/
+
+/* subnav crono*/
+ul{
+    padding-left: 2rem;
 }
+.tipo__crono--subnav nav ul {
+
+    
+}
+.tipo__crono--subnav nav ul li {
+    display: inline-block;
+    position: relative;
+    margin-left: -3rem;
+}
+
+.tipo__crono--subnav a{
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.tipo__crono--subnav li{
+    text-decoration: none;
+    list-style-type: none;
+}
+.tipo__crono--subnav ul li a{
+    font-family: 'Playfair Display', serif;
+    text-decoration: none;
+    justify-content: flex-end;
+    color: #9d2021;
+    letter-spacing: 1px;
+    font-size: 0.8rem; /*cambia el tamaño de las tipos del nav*/
+    font-weight: 600;
+    font-style: italic;
+}
+
+.tipo__crono--subnav li:hover > ul {
+    display:block;
+}
+
+.tipo__crono--subnav ul li:hover ul {
+    display: block;
+}
+
+.tipo__crono--subnav ul li a:hover { 
+    color:#2d2e2f;
+}
+
+.tipo__crono--subnav ul li a.active { 
+    color:#2d2e2f;
+}
+
+.tipo__crono--subnav ul li a:after {
+    color:#2d2e2f;
+}
+
+/*cierra subnav*/
+
 .tipo__crono-seccion-tit{
     font-family: 'Playfair Display', serif;
     color: #ac8fac;
@@ -1198,8 +1272,50 @@ body::-webkit-scrollbar-thumb {
     margin-top: 35rem;
     padding-left: 3.5rem;
 }
-.caja__slider{
-    padding-top: 2rem;
+
+
+/*abre imágenes cv FLEXBOX*/
+.galeria__cv--individuales{
+    height: 120px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-flow: row nowrap;
+    align-items: baseline; 
+    justify-content:flex-start;
+    gap:14px;
+}
+
+
+.galeria__cv--individuales-right{
+    margin-top: 5px;
+    display: flex;
+    flex-direction: row;
+    flex-flow: row nowrap;
+    align-items: baseline; 
+    justify-content: flex-end;
+
+}
+.catalogo__img{
+    width: 21vh;
+    height: 21vh;
+    
+}
+
+
+.galeria__item ul{
+list-style: none;
+text-decoration: none;
+
+
+}
+.galeria__item ul li{
+    list-style: none;
+    text-decoration: none;
+}
+.galeria__item ul li{
+    list-style: none;
+    text-decoration: none;
 }
 /* -------------------------------------------------------------------------- */
 /*                                   
@@ -1221,7 +1337,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .caja__vermas--next{
-    margin-top: 16px;
+    margin-top: 15px;
 }
 
 .qa {
@@ -1247,7 +1363,7 @@ body::-webkit-scrollbar-thumb {
     font-style: italic;
   }
 
-  .tipo__white {
+  .tipo__w--white {
     font-family: 'Nunito', sans-serif;
     color:#fff;
     font-weight: 600;
@@ -1258,8 +1374,6 @@ body::-webkit-scrollbar-thumb {
     line-height:15px;
     letter-spacing: 1px;
     height: 18px;
-    font-size: 1rem;
-    font-style: italic;
   }
 
 .qa label:before {
@@ -1394,6 +1508,7 @@ body::-webkit-scrollbar-thumb {
     line-height: 2rem;
 }
 /*abre imágenes crono FLEXBOX*/
+.caja
 .galeria__crono--individuales{
     height: 150px;
     margin-right:5.2%;
@@ -1404,8 +1519,6 @@ body::-webkit-scrollbar-thumb {
     align-items: baseline; 
     justify-content: space-between;
 }
-
-
 .galeria__crono--individuales-right{
     margin-left: 503px;
     margin-top: 5px;
@@ -1415,8 +1528,9 @@ body::-webkit-scrollbar-thumb {
     align-items: baseline; 
     justify-content: flex-end;
     margin-right:5%; /*esto no puede ser, acá hay algo raro porque galeria__crono--individuales tiene el 5,2%*/
-
 }
+/*abre imágenes crono FLEXBOX*/
+
 /*reemplazado en crono_cronologías por el slider
 .galeria__item{
     height: 155px;
