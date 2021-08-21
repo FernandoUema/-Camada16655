@@ -23,9 +23,7 @@ html, body {
     scroll-behavior: smooth;
     z-index:-2;
     padding-top:0;
-}	
-
-
+}
 * {
     Margin:0; 
     padding:0;
@@ -87,11 +85,11 @@ body::-webkit-scrollbar-thumb {
 # ESTILOS COMUNES
 ---------------------------------------------------------------*/
 /*---------------------ABRE COLORBACKGROUND--------------------*/
-/*CV*/
-#colorbg__cv--lila{
+/*Cronologias*/
+#colorbg__crono--lila{
     background-color:#b09ab0;
 }
-.colorbg__cv--lila{
+.colorbg__crono--lila{
     background-color:#b09ab0;
 }
 /*OBRA*/
@@ -114,7 +112,7 @@ body::-webkit-scrollbar-thumb {
     line-height: 0.1rem;
 }
 #epigrafe__obra--bg .tipo__obra--nombre, 
-.tipo__epigrafe--titulo-cv{
+.tipo__epigrafe--titulo-crono{
     font-family: 'Playfair Display', serif;
     font-size: 0.8rem;
     font-weight: 600;
@@ -137,7 +135,7 @@ body::-webkit-scrollbar-thumb {
 .tipo__obra--medida, 
 .tipo__obra--descripcion, 
 .tipo__obra--anio, 
-.tipo__epigrafe--sub-cv{
+.tipo__epigrafe--sub-crono{
     font-family: 'Jost', sans-serif;
     font-size: 0.65rem;
     font-weight: 400;
@@ -145,7 +143,7 @@ body::-webkit-scrollbar-thumb {
     font-kerning: none;
     color:#2d2e2f;
 }
-.tipo__epigrafe--titulo-cv{
+.tipo__epigrafe--titulo-crono{
     font-family: 'Playfair Display', serif;
     font-size: 0.7rem;
     font-weight: 600;
@@ -156,7 +154,9 @@ body::-webkit-scrollbar-thumb {
 }
 .caja__ph--copyright-izq{
     line-height: 0;
-    padding-bottom: 2rem;
+    padding-bottom: 1rem;
+    margin-top: 9rem;
+    margin-left: 1rem;
 
 }
 .tipo__ph--ubicacion-izq{
@@ -1104,12 +1104,57 @@ body::-webkit-scrollbar-thumb {
   justify-content: center;
   */
 
-.cv__sticky--img{
+/*https://bootsnipp.com/snippets/6Ayd7*/
+
+.sidebar
+{
+    background-color:#28a745;
+    min-height:200px;
+    padding:15px;
+    color:#fff;
+    margin:25px 0px;
+}
+.stick {
+    position: fixed;
+    width: 26.7%;
+    top: 00px;
+}
+
+.abs {
+    position: absolute;
+    bottom: 0px;
+    width: 92.5%;
+}
+
+/**/
+.col__sticky--zi-4, .caja__crono--img{
+    padding: 0;
+    margin-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;  
+    z-index: 4;
+}
+.ancla:before {
+    display: block;
+    content: " ";
+    margin-top: -120px;
+    height: 120px;
+    visibility: hidden;
+}
+
+.ancla__1:before {
+    display: block;
+    content: " ";
+    margin-top: -120px;
+    height: 120px;
+    visibility: hidden;
+}
+
+.crono__sticky--img{
     position: relative;
 }
 
-
-#cv .caja__img--sticky-left{
+#crono .caja__img--sticky-left{
     top:0;
     margin-right:60%;
     bottom:0;
@@ -1120,39 +1165,179 @@ body::-webkit-scrollbar-thumb {
     min-height: 100vh;
 }
 
-#cv .tipo__cv-red-tit{
+.sticky-div.footstick{
+    position:absolute; 
+    bottom:0; 
+    top:inherit!important
+}
+
+.caja__crono--start{ 
+    margin-bottom: 1rem;
+    display: block;
+    margin-top: 12rem;
+}
+#crono .tipo__crono--individuales-start{ 
+    font-family: 'Playfair Display', serif;
+    font-weight: 500;
+    font-size: 1.6rem;
+    font-kerning: none;
+    color:#2d2e2f;
+    font-style: italic;
+    margin-bottom: 0px;
+    padding-top:3rem;
+    letter-spacing: 1px;
+}
+
+#crono .tipo__crono-red-tit-articulo{
     font-family: 'Playfair Display', serif;
     color: #c4373c;
-    font-size: 6rem;
+    font-size: 5rem;
     font-weight: 800;
     font-style: italic;
-    text-align:left;
-    margin-left: 300px;
-    letter-spacing: 10px;
+    text-align:right;
+    letter-spacing: 4px;
     line-height: 0.5rem;
-    padding-top:100%;
     position: absolute;
+    margin-bottom: 2rem;
+    margin-left: -3rem;
+}
+/* eliminar las bullets y los números DE INES*/
+
+/* subnav crono*/
+ul{
+    padding-left: 2rem;
+}
+.tipo__crono--subnav nav ul {
+
+    
+}
+.tipo__crono--subnav nav ul li {
+    display: inline-block;
+    position: relative;
+    margin-left: -3rem;
+}
+
+.tipo__crono--subnav a{
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.tipo__crono--subnav li{
+    text-decoration: none;
+    list-style-type: none;
+}
+.tipo__crono--subnav ul li a{
+    font-family: 'Playfair Display', serif;
+    text-decoration: none;
+    justify-content: flex-end;
+    color: #9d2021;
+    letter-spacing: 1px;
+    font-size: 0.8rem; /*cambia el tamaño de las tipos del nav*/
+    font-weight: 600;
+    font-style: italic;
+}
+
+.tipo__crono--subnav li:hover > ul {
+    display:block;
+}
+
+.tipo__crono--subnav ul li:hover ul {
+    display: block;
+}
+
+.tipo__crono--subnav ul li a:hover { 
+    color:#2d2e2f;
+}
+
+.tipo__crono--subnav ul li a.active { 
+    color:#2d2e2f;
+}
+
+.tipo__crono--subnav ul li a:after {
+    color:#2d2e2f;
+}
+
+/*cierra subnav*/
+
+.tipo__crono-seccion-tit{
+    font-family: 'Playfair Display', serif;
+    color: #ac8fac;
+    font-size: 1.5rem;
+    font-weight: 400;
+    font-style: italic;
+    text-align:left;
+    letter-spacing: 1px;
+    line-height: 0.5rem;
+    position: absolute;
+    margin-top: 35rem;
+    padding-left: 3.5rem;
+}
+
+
+/*abre imágenes cv FLEXBOX*/
+.galeria__cv--individuales{
+    height: 120px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-flow: row nowrap;
+    align-items: baseline; 
+    justify-content:flex-start;
+    gap:14px;
+}
+
+
+.galeria__cv--individuales-right{
+    margin-top: 5px;
+    display: flex;
+    flex-direction: row;
+    flex-flow: row nowrap;
+    align-items: baseline; 
+    justify-content: flex-end;
+
+}
+.catalogo__img{
+    width: 21vh;
+    height: 21vh;
+    
+}
+
+
+.galeria__item ul{
+list-style: none;
+text-decoration: none;
+
+
+}
+.galeria__item ul li{
+    list-style: none;
+    text-decoration: none;
+}
+.galeria__item ul li{
+    list-style: none;
+    text-decoration: none;
 }
 /* -------------------------------------------------------------------------- */
 /*                                   
-/*menu desplegable CV https://es.stackoverflow.com/questions/15594/crear-elementos-desplegable-para-pagina-html5
+/*menu desplegable crono https://es.stackoverflow.com/questions/15594/crear-elementos-desplegable-para-pagina-html5
 */                               
 /* -------------------------------------------------------------------------- */
 
+
 .individuales, .colectivas, .premios{
-    z-index: 990;
+    z-index: 2;
 }
-.container__desplegable--qa{
-    margin-right:5.2%;
-    margin-top: 18px;
+.caja__vermas--start{
+    margin-top: 0.9rem;
     display: flex;
     flex-direction: row;
     flex-flow: row nowrap;
     align-items: baseline; 
     justify-content: space-between;
 }
-.text__desplegable--qa{
-    margin-top: 16px;
+
+.caja__vermas--next{
+    margin-top: 15px;
 }
 
 .qa {
@@ -1162,27 +1347,47 @@ body::-webkit-scrollbar-thumb {
 }
 .qa input {
     display:none;
-  }
+}
 .qa label {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Nunito', sans-serif;
+    color:#fff;
+    font-weight: 600;
+    font-size: 0.8rem;
+    font-kerning: none;
+    font-style:normal;
     display:block;
     line-height:15px;
-    font-weight:400;
     letter-spacing: 1px;
     height: 18px;
-    font-size: 0.9rem;
+    font-size: 1rem;
     font-style: italic;
   }
+
+  .tipo__w--white {
+    font-family: 'Nunito', sans-serif;
+    color:#fff;
+    font-weight: 600;
+    font-size: 0.8rem;
+    font-kerning: none;
+    font-style:normal;
+    display:inline;
+    line-height:15px;
+    letter-spacing: 1px;
+    height: 18px;
+  }
+
 .qa label:before {
     content:"+";
     display:inline-block;
-    height:18px;
-    width:18px;
+    height:24px;
+    width:25px;
     background:#c4373c;
-    color:#f6f5f3;
+    color:#fff;
     text-align:center;
-    margin-right: 20px;
-  }
+    margin-right: 15px;
+    padding-top: 4px;
+}
+
 
 .qa div {
     display:none;
@@ -1197,26 +1402,8 @@ body::-webkit-scrollbar-thumb {
 }
   /*cierra menú desplegable*/
 
-#cv .container__titulo--cv-start {
-    margin-right: 500px;
-    width:66%;
-    margin-left: 33%;
-    margin-top:140px; 
-    margin-bottom: 20px;
-    float: left;
-    line-height: 2rem;
-}
 
-#cv .titulo__cv--start{ 
-    font-family: 'Playfair Display', serif;
-    font-weight: 500;
-    font-size: 1.6rem;
-    font-kerning: none;
-    color:#2d2e2f;
-    font-style: italic;
-    margin-bottom: 0px;
-}
-#cv .titulo__cv--next{ 
+#crono .tipo__crono--next{ 
     font-family: 'Playfair Display', serif;
     font-weight: 500;
     font-size: 1.6rem;
@@ -1226,11 +1413,11 @@ body::-webkit-scrollbar-thumb {
     margin-bottom: 0px;
 }
 
-#cv .titulo__cv--colectivas{
+#crono .titulo__crono--colectivas{
     margin-top: 1rem;
 }
-#cv .subtitulo__cv{
-    font-family: 'Nunito', sans serif;
+#crono .subtitulo__crono{
+    font-family: 'Nunito', sans-serif;
     color:#f6f5f3;
     font-weight: 500;
     font-size: 0.8rem;
@@ -1242,30 +1429,27 @@ body::-webkit-scrollbar-thumb {
     margin-bottom: 1.7rem;
 }
 
-/*contenedor*//*___________________________________________________GRIDr*/
-#cv .container__txt--cv{
+
+
+#crono .container__txt--crono{
     width:auto;
-    margin-left: 500px;
-    margin-top:-680px; 
-    margin-bottom: 30px;
-    display: block;
-    margin-right: 20px;
+    position: relative;
 }
-#cv .container__txt--cv-last{
-    width:auto;
-    margin-left: 500px;
-    margin-top:20px; 
-    display: block;
-    margin-right: 20px;
+.aside{
+    width:100%; 
+    float: right;
 }
-#cv .container__txt--cv-medium{
+
+.container__txt--crono{
+    display:inline-block;
+}
+
+#crono .caja__crono--medium{
     width:auto;
-    margin-left: 500px;
     display: block;
-    margin-right: 20px;
 }
 /*año tipo*/
-#cv .txt__anio{
+#crono .tipo__crono--anio{
     font-family: 'Nunito', sans-serif;
     color:#2d2e2f;
     font-weight: 700;
@@ -1274,13 +1458,13 @@ body::-webkit-scrollbar-thumb {
     font-style: normal;
     margin: 0px;
 }
-#cv .none{
+#crono .none{ /*le da gap entre anio y descripcion*/
     padding-left: 6px;
     padding-right:6px;
 }
 
 /*
-#cv .none{
+#crono .none{
     font-family: 'Nunito', sans-serif;
     font-weight: 800;
     font-size: 0.9rem;
@@ -1289,7 +1473,7 @@ body::-webkit-scrollbar-thumb {
     color:#f6f5f3;
 }
 
-#cv .pegado{
+#crono .pegado{
     font-family: 'Nunito', sans-serif;
     font-weight: 800;
     font-size: 0.9rem;
@@ -1297,7 +1481,7 @@ body::-webkit-scrollbar-thumb {
     line-height: 1.2rem;    
 }
 
-#cv .despegado{
+#crono .despegado{
     font-family: 'Nunito', sans-serif;
     font-weight: 800;
     font-size: 0.9rem;
@@ -1305,22 +1489,8 @@ body::-webkit-scrollbar-thumb {
     line-height: 2rem;  
     margin-top: 0.6rem;    
 }*/
-#cv .container__txt--descripcion{
-    width:auto;
-    margin-left: 500px;
-    margin-bottom: 20px;
-    display: block;
-    margin-top:-705px; /*a reposicionar con grid*/
-}
-#cv .container__txt--descripcion-2{
-    width:auto;
-    margin-left: 500px;
-    margin-bottom: 20px;
-    display: block;
-    margin-top:-3105px; /*a reposicionar con grid*/
 
-}
-.text__right-descripcion{
+.tipo__crono--descripcion{
     font-family: 'Jost', sans-serif;
     font-weight: 400;
     font-size: 0.95rem;
@@ -1329,7 +1499,7 @@ body::-webkit-scrollbar-thumb {
     line-height: 2rem;
     font-style: normal;
 }
-.text__right-descripcion-articulo{
+.tipo__crono--descripcion-articulo{
     font-family: 'Jost', sans-serif;
     font-weight: 400;
     font-size: 0.95rem;
@@ -1337,8 +1507,9 @@ body::-webkit-scrollbar-thumb {
     color:#2d2e2f;
     line-height: 2rem;
 }
-/*abre imágenes cv FLEXBOX*/
-.galeria__cv--individuales{
+/*abre imágenes crono FLEXBOX*/
+.caja
+.galeria__crono--individuales{
     height: 150px;
     margin-right:5.2%;
     margin-top: 20px;
@@ -1348,9 +1519,7 @@ body::-webkit-scrollbar-thumb {
     align-items: baseline; 
     justify-content: space-between;
 }
-
-
-.galeria__cv--individuales-right{
+.galeria__crono--individuales-right{
     margin-left: 503px;
     margin-top: 5px;
     display: flex;
@@ -1358,27 +1527,29 @@ body::-webkit-scrollbar-thumb {
     flex-flow: row nowrap;
     align-items: baseline; 
     justify-content: flex-end;
-    margin-right:5%; /*esto no puede ser, acá hay algo raro porque galeria__cv--individuales tiene el 5,2%*/
-
+    margin-right:5%; /*esto no puede ser, acá hay algo raro porque galeria__crono--individuales tiene el 5,2%*/
 }
+/*abre imágenes crono FLEXBOX*/
+
+/*reemplazado en crono_cronologías por el slider
 .galeria__item{
     height: 155px;
     width: 155px;
     opacity: 85%;
     border: #2d2e2f;
     border-style: solid;
-}
+}*/
 
 
 /*abre manejo interlínea
-#cv .pegadito{
+#crono .pegadito{
     font-family: 'Jost', sans-serif;
     font-weight: 400;
     font-size: 1rem;
     font-kerning: none;
     line-height: 1.2rem;    
 }
-#cv .despegadito{
+#crono .despegadito{
     font-family: 'Jost', sans-serif;
     font-weight: 400;
     font-size: 1rem;
